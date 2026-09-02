@@ -1,0 +1,15 @@
+\begin{table}
+\caption{Integrated diagnostic summary of normalized topic-evaluation metrics.}
+\label{tab:integrated_metric_failure}
+\begin{tabular}{lllrrrrl}
+\toprule
+Metric & Metric Type & Base Criterion & Direction Risk & Original K Agreement (%) & Mean Rank Difference & Downstream K Agreement (%) & Mean MCC Loss & Failure Mechanism \\
+\midrule
+NAC_UMass & Normalized Coherence & UMass & HIGH & 0.000000 & 49.494900 & 0.000000 & 0.251400 & Direction-sensitive ranking distortion risk \\
+NAC_CV & Normalized Coherence & CV & LOW & 100.000000 & 0.000000 & 0.000000 & 0.231900 & No major direction distortion detected \\
+NAC_UCI & Normalized Coherence & UCI & HIGH & 0.000000 & 49.494900 & 0.000000 & 0.135200 & Direction-sensitive ranking distortion risk \\
+NAC_NPMI & Normalized Coherence & NPMI & HIGH & 0.000000 & 49.494900 & 0.000000 & 0.251900 & Direction-sensitive ranking distortion risk \\
+NAP & Normalized Perplexity & LogPerplexity & LOW & 100.000000 & 0.000000 & 0.000000 & 0.681000 & Downstream criterion misalignment \\
+\bottomrule
+\end{tabular}
+\end{table}

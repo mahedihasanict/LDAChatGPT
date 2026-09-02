@@ -1,0 +1,7 @@
+Metric,Value
+Total Folds,5.0
+K Agreement Count,0.0
+K Agreement Percentage,0.0
+Mean MCC Loss,0.6809939717870626
+Median MCC Loss,0.6746403842221872
+Maximum MCC Loss,0.7569045408025987

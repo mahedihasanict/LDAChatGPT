@@ -1,0 +1,11 @@
+{
+    "fold": 4,
+    "num_documents_train": 240,
+    "vocabulary_before_filtering": 4159,
+    "vocabulary_after_filtering": 886,
+    "no_below": 5,
+    "no_above": 0.5,
+    "dictionary_size": 886,
+    "random_seed": 42,
+    "created_by": "Notebook_03_Part3B"
+}

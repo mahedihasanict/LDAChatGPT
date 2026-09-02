@@ -1,0 +1,9 @@
+Diagnostic Finding,Result
+Total Metrics Evaluated,5
+Type I Metrics,"NAC_UMass, NAC_UCI, NAC_NPMI"
+Type II Metrics,"NAC_CV, NAP"
+Metrics With Zero Downstream K Agreement,5/5
+Overall Mean MCC Loss,0.31028
+Largest Mean MCC Loss,NAP: 0.681000
+Smallest Mean MCC Loss,NAC_UCI: 0.135200
+Primary Conclusion,Normalized topic-selection metrics show both transformation-induced ranking distortion and ranking-preserving downstream misalignment.

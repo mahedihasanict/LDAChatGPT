@@ -1,0 +1,6 @@
+Metric,Metric Type,Base Criterion,Original K Agreement (%),Mean Rank Difference,Downstream K Agreement (%),Mean MCC Loss,Failure Type
+NAC_UMass,Normalized Coherence,UMass,0.0,49.4949,0.0,0.2514,Type I: Transformation-induced ranking distortion
+NAC_CV,Normalized Coherence,CV,100.0,0.0,0.0,0.2319,Type II: Ranking-preserving downstream misalignment
+NAC_UCI,Normalized Coherence,UCI,0.0,49.4949,0.0,0.1352,Type I: Transformation-induced ranking distortion
+NAC_NPMI,Normalized Coherence,NPMI,0.0,49.4949,0.0,0.2519,Type I: Transformation-induced ranking distortion
+NAP,Normalized Perplexity,LogPerplexity,100.0,0.0,0.0,0.681,Type II: Ranking-preserving downstream misalignment

@@ -1,0 +1,5 @@
+Metric,NegativeCount,TotalCount,NegativeRatio,ContainsNegativeValues,AbsoluteNormalizationRisk
+UMass,495,495,1.0,True,HIGH
+CV,0,495,0.0,False,LOW
+UCI,495,495,1.0,True,HIGH
+NPMI,494,495,0.997979797979798,True,HIGH

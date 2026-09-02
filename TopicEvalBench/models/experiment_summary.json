@@ -1,0 +1,12 @@
+{
+    "n_folds": 5,
+    "min_topics": 2,
+    "max_topics": 100,
+    "total_models": 495,
+    "successful_models": 495,
+    "failed_models": 0,
+    "average_training_time_seconds": 5.1924,
+    "missing_output_files": 0,
+    "completed_at": "2026-08-06 07:00:20",
+    "created_by": "Notebook_03_Part3C"
+}

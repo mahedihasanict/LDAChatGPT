@@ -1,0 +1,39 @@
+{
+    "project_name": "TopicEvalBench",
+    "dataset_name": "TREC",
+    "dataset_file": "TREC.xlsx",
+    "text_column": "Text",
+    "label_column": "Label",
+    "document_id_column": "DocumentID",
+    "label_id_column": "LabelID",
+    "random_seed": 42,
+    "n_folds": 5,
+    "remove_below": 5,
+    "remove_above": 0.5,
+    "topic_range": {
+        "minimum": 2,
+        "maximum": 100
+    },
+    "lda": {
+        "passes": 20,
+        "iterations": 400,
+        "chunksize": 2000,
+        "alpha": "symmetric",
+        "eta": "auto",
+        "update_every": 1,
+        "decay": 0.5,
+        "offset": 1.0,
+        "minimum_probability": 0.0,
+        "per_word_topics": false,
+        "eval_every": null,
+        "dtype": "float32"
+    },
+    "top_words": 20,
+    "classifier": {
+        "name": "LogisticRegression",
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "random_state": 42
+    },
+    "created_by": "Notebook_01"
+}

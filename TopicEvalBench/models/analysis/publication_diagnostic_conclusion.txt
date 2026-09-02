@@ -1,0 +1,67 @@
+
+
+PRIMARY DIAGNOSTIC CONCLUSION
+
+The diagnostic evaluation examined 5 normalized
+topic-selection metrics derived from coherence and perplexity
+criteria.
+
+Two distinct failure mechanisms were identified.
+
+Type I: Transformation-induced ranking distortion
+
+The metrics ['NAC_UMass', 'NAC_UCI', 'NAC_NPMI'] failed to preserve the topic ranking
+of their underlying coherence criteria. Their mean original
+topic-selection agreement was below complete agreement, with an
+average rank displacement of
+49.4949.
+
+These failures were associated with direction-sensitive
+transformations applied to predominantly negative-valued
+coherence criteria. The results demonstrate that absolute-value
+normalization can substantially alter the ordering of candidate
+topic numbers.
+
+Type II: Ranking-preserving downstream misalignment
+
+The metrics ['NAC_CV', 'NAP'] preserved the rankings of their
+underlying criteria but still failed to identify the
+downstream-optimal topic number.
+
+This finding demonstrates that mathematical preservation of an
+intrinsic metric ranking does not necessarily imply effective
+topic-number selection for downstream predictive performance.
+
+Downstream evaluation
+
+All 5 of the 5 evaluated
+metrics showed zero agreement with the downstream-optimal topic
+number in this experimental setting.
+
+The overall average MCC loss across the evaluated metrics was
+0.310280.
+
+The largest mean downstream MCC loss was observed for
+NAP with a loss of
+0.681000.
+
+The smallest mean downstream MCC loss was observed for
+NAC_UCI with a loss of
+0.135200.
+
+Overall conclusion
+
+The findings show that normalization-based topic-selection
+metrics can fail through at least two fundamentally different
+mechanisms:
+
+(1) transformation-induced distortion of the original metric
+ranking, and
+
+(2) ranking-preserving but downstream-misaligned topic
+selection.
+
+Therefore, evaluating a normalized topic-selection metric solely
+on its mathematical transformation properties is insufficient.
+A comprehensive evaluation should examine both ranking
+preservation and downstream topic-selection efficacy.

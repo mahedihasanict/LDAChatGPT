@@ -1,0 +1,6 @@
+Metric,MetricType,BaseCriterion,DirectionRisk,NegativeRatio,OriginalVsNACSpearman,OriginalKAgreement,OriginalKAgreementPercent,MeanRankDifference,MaximumRankDifference,DifferentRanks,TotalRankedTopics,DownstreamKAgreement,DownstreamKAgreementPercent,MeanMCCLoss,FailureMechanism
+NAC_UMass,Normalized Coherence,UMass,HIGH,1.0,-0.9592863923715228,0/5,0.0,49.494949494949495,98.0,490,495.0,0/5,0.0,0.25140350035711956,Direction-sensitive ranking distortion risk
+NAC_CV,Normalized Coherence,CV,LOW,0.0,0.9633091542841532,5/5,100.0,0.0,0.0,0,495.0,0/5,0.0,0.23187859637624833,No major direction distortion detected
+NAC_UCI,Normalized Coherence,UCI,HIGH,1.0,-0.9436361180878022,0/5,0.0,49.494949494949495,98.0,490,495.0,0/5,0.0,0.13515938292418764,Direction-sensitive ranking distortion risk
+NAC_NPMI,Normalized Coherence,NPMI,HIGH,0.997979797979798,-0.9610544327900944,0/5,0.0,49.494949494949495,98.0,490,495.0,0/5,0.0,0.2518719548780982,Direction-sensitive ranking distortion risk
+NAP,Normalized Perplexity,LogPerplexity,LOW,,,5/5,100.0,0.0,0.0,0,,0/5,0.0,0.6809939717870626,Downstream criterion misalignment

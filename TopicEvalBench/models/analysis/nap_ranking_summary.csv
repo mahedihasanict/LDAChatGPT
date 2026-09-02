@@ -1,0 +1,6 @@
+Diagnostic,Count,Percentage
+Total Folds,5,100.0
+Original vs Absolute Agreement,5,100.0
+Original vs NAP Agreement,5,100.0
+Absolute Ranking Reversals,0,0.0
+NAP Ranking Reversals,0,0.0
