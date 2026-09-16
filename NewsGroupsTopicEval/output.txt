@@ -1,73 +1,441 @@
-Output NG04-06B
+Output NG04-7
 
-======================================================================
-NG03 FOLD-LEVEL DICTIONARY VALIDATION
-======================================================================
-Dictionary root:
-/content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary
-
-----------------------------------------------------------------------
-FOLD 1
-Directory: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_1
-Contents:
-  dictionary.dict
-
-----------------------------------------------------------------------
-FOLD 2
-Directory: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_2
-Contents:
-  dictionary.dict
-
-----------------------------------------------------------------------
-FOLD 3
-Directory: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_3
-Contents:
-  dictionary.dict
-
-----------------------------------------------------------------------
-FOLD 4
-Directory: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_4
-Contents:
-  dictionary.dict
-
-----------------------------------------------------------------------
-FOLD 5
-Directory: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_5
-Contents:
-  dictionary.dict
-
-======================================================================
-DICTIONARY VALIDATION SUMMARY
-======================================================================
-Expected folds : 5
-Missing folds  : []
-Fold resources : 5
-
-✓ All five fold-level dictionary directories exist.
-
-Output NG04-06C
-
-======================================================================
-DICTIONARY FILE STRUCTURE
+ ======================================================================
+NG04 FOLD DICTIONARY VALIDATION
 ======================================================================
 
 ----------------------------------------------------------------------
 FOLD 1
-  dictionary.dict    (415.04 KB)
+Dictionary: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_1/dictionary.dict
+Vocabulary size: 18264
 
 ----------------------------------------------------------------------
 FOLD 2
-  dictionary.dict    (408.42 KB)
+Dictionary: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_2/dictionary.dict
+Vocabulary size: 17976
 
 ----------------------------------------------------------------------
 FOLD 3
-  dictionary.dict    (399.73 KB)
+Dictionary: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_3/dictionary.dict
+Vocabulary size: 17589
 
 ----------------------------------------------------------------------
 FOLD 4
-  dictionary.dict    (405.29 KB)
+Dictionary: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_4/dictionary.dict
+Vocabulary size: 17883
 
 ----------------------------------------------------------------------
 FOLD 5
-  dictionary.dict    (410.60 KB)
+Dictionary: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_5/dictionary.dict
+Vocabulary size: 18083
+
+======================================================================
+DICTIONARY SUMMARY
+======================================================================
+
+  
+    
+
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+
+
+  
+    
+      
+      Fold
+      DictionaryPath
+      DictionarySize
+    
+  
+  
+    
+      0
+      1
+      /content/drive/MyDrive/LDAChatGPT/NewsGroupsTo...
+      18264
+    
+    
+      1
+      2
+      /content/drive/MyDrive/LDAChatGPT/NewsGroupsTo...
+      17976
+    
+    
+      2
+      3
+      /content/drive/MyDrive/LDAChatGPT/NewsGroupsTo...
+      17589
+    
+    
+      3
+      4
+      /content/drive/MyDrive/LDAChatGPT/NewsGroupsTo...
+      17883
+    
+    
+      4
+      5
+      /content/drive/MyDrive/LDAChatGPT/NewsGroupsTo...
+      18083
+    
+  
+
+
+    
+
+  
+    
+
+  
+    
+  
+    
+
+  
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  
+
+    
+      const buttonEl =
+        document.querySelector('#df-1863ce6a-a9c2-4cbf-920d-e8bb8dd22034 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-1863ce6a-a9c2-4cbf-920d-e8bb8dd22034');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    
+  
+
+
+  
+    
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    
+    
+
+  
+    
+  
+    
+    
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_717b6ede-eceb-4b8a-8a6c-9c169dd0d877 button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('dictionary_df');
+      }
+      })();
+    
+  
+
+    
+  
+
+
+Output NG04-7B
+
+ ======================================================================
+MANIFEST vs ACTUAL DICTIONARY SIZE
+======================================================================
+
+  
+    
+
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+
+
+  
+    
+      
+      Fold
+      ManifestDictionarySize
+      DictionarySize
+      Match
+    
+  
+  
+    
+      0
+      1
+      18264
+      18264
+      True
+    
+    
+      1
+      2
+      17976
+      17976
+      True
+    
+    
+      2
+      3
+      17589
+      17589
+      True
+    
+    
+      3
+      4
+      17883
+      17883
+      True
+    
+    
+      4
+      5
+      18083
+      18083
+      True
+    
+  
+
+
+    
+
+  
+    
+
+  
+    
+  
+    
+
+  
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  
+
+    
+      const buttonEl =
+        document.querySelector('#df-49925142-3255-4759-ba80-fe40fc976623 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-49925142-3255-4759-ba80-fe40fc976623');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    
+  
+
+
+  
+    
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    
+    
+
+  
+    
+  
+    
+    
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_b2159be1-cd66-4d6c-939c-b2dee3fac67b button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('dictionary_check');
+      }
+      })();
+    
+  
+
+    
+  
+
+======================================================================
+VALIDATION RESULT
+======================================================================
+Fold 1: Manifest=18264, Actual=18264, Match=True
+Fold 2: Manifest=17976, Actual=17976, Match=True
+Fold 3: Manifest=17589, Actual=17589, Match=True
+Fold 4: Manifest=17883, Actual=17883, Match=True
+Fold 5: Manifest=18083, Actual=18083, Match=True
+
+✓ All fold dictionaries match the NG03 manifest.
 
