@@ -1,1 +1,73 @@
+Output NG04-06B
+
+======================================================================
+NG03 FOLD-LEVEL DICTIONARY VALIDATION
+======================================================================
+Dictionary root:
+/content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary
+
+----------------------------------------------------------------------
+FOLD 1
+Directory: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_1
+Contents:
+  dictionary.dict
+
+----------------------------------------------------------------------
+FOLD 2
+Directory: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_2
+Contents:
+  dictionary.dict
+
+----------------------------------------------------------------------
+FOLD 3
+Directory: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_3
+Contents:
+  dictionary.dict
+
+----------------------------------------------------------------------
+FOLD 4
+Directory: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_4
+Contents:
+  dictionary.dict
+
+----------------------------------------------------------------------
+FOLD 5
+Directory: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/dictionary/Fold_5
+Contents:
+  dictionary.dict
+
+======================================================================
+DICTIONARY VALIDATION SUMMARY
+======================================================================
+Expected folds : 5
+Missing folds  : []
+Fold resources : 5
+
+✓ All five fold-level dictionary directories exist.
+
+Output NG04-06C
+
+======================================================================
+DICTIONARY FILE STRUCTURE
+======================================================================
+
+----------------------------------------------------------------------
+FOLD 1
+  dictionary.dict    (415.04 KB)
+
+----------------------------------------------------------------------
+FOLD 2
+  dictionary.dict    (408.42 KB)
+
+----------------------------------------------------------------------
+FOLD 3
+  dictionary.dict    (399.73 KB)
+
+----------------------------------------------------------------------
+FOLD 4
+  dictionary.dict    (405.29 KB)
+
+----------------------------------------------------------------------
+FOLD 5
+  dictionary.dict    (410.60 KB)
 
