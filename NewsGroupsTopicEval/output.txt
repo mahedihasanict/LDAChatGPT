@@ -1,166 +1,239 @@
 ================================================================================
-NG04-8G — RECONCILE FOLDS WITH PROCESSED DATASET
+NG04-8J — RECOVER EXACT NG03 CV SPLITTER
 ================================================================================
 
-Processed dataset shape: (18297, 7)
-Processed unique DocumentIDs: 18297
+Processed dataset: (18297, 7)
+Dictionary no_below: 5
+Dictionary no_above: 0.5
 
-======================================================================
+================================================================================
+CANDIDATE: StratifiedKFold_shuffle42
+================================================================================
+
 Fold 1
-======================================================================
-Original train count : 14663
-Original test count  : 3666
+  Train/Test: 14637 / 3660
+  Candidate dictionary: 16818
+  Saved dictionary    : 18264
+  Common tokens       : 15801
+  Candidate only      : 1017
+  Saved only          : 2463
+  Exact token set     : False
+  Exact token IDs     : False
 
-Unique train IDs     : 14663
-Unique test IDs      : 3666
-
-After matching ProcessedDataset:
-  Train = 14642
-  Test  = 3655
-
-Removed from train   : 21
-Removed from test    : 11
-
-NG03 manifest train  : 14637
-NG03 manifest test   : 3660
-
-Train matches manifest: False
-Test matches manifest : False
-
-First removed train IDs:
-[325, 948, 2115, 2472, 3495, 4106, 4194, 4680, 4983, 6970, 8573, 10856, 11307, 12114, 13911, 14166, 14462, 14716, 17934, 18245]
-
-First removed test IDs:
-[191, 3448, 4160, 4819, 6839, 7960, 9801, 9886, 10532, 13648, 17086]
-
-======================================================================
 Fold 2
-======================================================================
-Original train count : 14663
-Original test count  : 3666
+  Train/Test: 14637 / 3660
+  Candidate dictionary: 16487
+  Saved dictionary    : 17976
+  Common tokens       : 15405
+  Candidate only      : 1082
+  Saved only          : 2571
+  Exact token set     : False
+  Exact token IDs     : False
 
-Unique train IDs     : 14663
-Unique test IDs      : 3666
-
-After matching ProcessedDataset:
-  Train = 14636
-  Test  = 3661
-
-Removed from train   : 27
-Removed from test    : 5
-
-NG03 manifest train  : 14637
-NG03 manifest test   : 3660
-
-Train matches manifest: False
-Test matches manifest : False
-
-First removed train IDs:
-[191, 948, 2115, 2472, 3448, 3495, 4106, 4160, 4194, 4680, 4819, 4983, 6839, 6970, 7960, 9801, 9886, 10532, 11307, 12114]
-
-First removed test IDs:
-[325, 8573, 10856, 14166, 17934]
-
-======================================================================
 Fold 3
-======================================================================
-Original train count : 14663
-Original test count  : 3666
+  Train/Test: 14638 / 3659
+  Candidate dictionary: 16434
+  Saved dictionary    : 17589
+  Common tokens       : 15381
+  Candidate only      : 1053
+  Saved only          : 2208
+  Exact token set     : False
+  Exact token IDs     : False
 
-Unique train IDs     : 14663
-Unique test IDs      : 3666
-
-After matching ProcessedDataset:
-  Train = 14634
-  Test  = 3663
-
-Removed from train   : 29
-Removed from test    : 3
-
-NG03 manifest train  : 14638
-NG03 manifest test   : 3659
-
-Train matches manifest: False
-Test matches manifest : False
-
-First removed train IDs:
-[191, 325, 948, 2115, 2472, 3448, 3495, 4106, 4160, 4680, 4819, 6839, 6970, 7960, 8573, 9801, 9886, 10532, 10856, 11307]
-
-First removed test IDs:
-[4194, 4983, 13911]
-
-======================================================================
 Fold 4
-======================================================================
-Original train count : 14663
-Original test count  : 3666
+  Train/Test: 14638 / 3659
+  Candidate dictionary: 16657
+  Saved dictionary    : 17883
+  Common tokens       : 15734
+  Candidate only      : 923
+  Saved only          : 2149
+  Exact token set     : False
+  Exact token IDs     : False
 
-Unique train IDs     : 14663
-Unique test IDs      : 3666
-
-After matching ProcessedDataset:
-  Train = 14639
-  Test  = 3658
-
-Removed from train   : 24
-Removed from test    : 8
-
-NG03 manifest train  : 14638
-NG03 manifest test   : 3659
-
-Train matches manifest: False
-Test matches manifest : False
-
-First removed train IDs:
-[191, 325, 2472, 3448, 3495, 4160, 4194, 4819, 4983, 6839, 6970, 7960, 8573, 9801, 9886, 10532, 10856, 13648, 13911, 14166]
-
-First removed test IDs:
-[948, 2115, 4106, 4680, 11307, 12114, 14462, 18643]
-
-======================================================================
 Fold 5
-======================================================================
-Original train count : 14664
-Original test count  : 3665
-
-Unique train IDs     : 14664
-Unique test IDs      : 3665
-
-After matching ProcessedDataset:
-  Train = 14637
-  Test  = 3660
-
-Removed from train   : 27
-Removed from test    : 5
-
-NG03 manifest train  : 14638
-NG03 manifest test   : 3659
-
-Train matches manifest: False
-Test matches manifest : False
-
-First removed train IDs:
-[191, 325, 948, 2115, 3448, 4106, 4160, 4194, 4680, 4819, 4983, 6839, 7960, 8573, 9801, 9886, 10532, 10856, 11307, 12114]
-
-First removed test IDs:
-[2472, 3495, 6970, 14716, 18245]
+  Train/Test: 14638 / 3659
+  Candidate dictionary: 16593
+  Saved dictionary    : 18083
+  Common tokens       : 15487
+  Candidate only      : 1106
+  Saved only          : 2596
+  Exact token set     : False
+  Exact token IDs     : False
 
 ================================================================================
-RECONCILIATION SUMMARY
+CANDIDATE: KFold_shuffle42
 ================================================================================
- Fold  SavedTrain  SavedTest  AfterProcessedTrain  AfterProcessedTest  ManifestTrain  ManifestTest  RemovedTrain  RemovedTest  TrainMatch  TestMatch
-    1       14663       3666                14642                3655          14637          3660            21           11       False      False
-    2       14663       3666                14636                3661          14637          3660            27            5       False      False
-    3       14663       3666                14634                3663          14638          3659            29            3       False      False
-    4       14663       3666                14639                3658          14638          3659            24            8       False      False
-    5       14664       3665                14637                3660          14638          3659            27            5       False      False
+
+Fold 1
+  Train/Test: 14637 / 3660
+  Candidate dictionary: 16535
+  Saved dictionary    : 18264
+  Common tokens       : 14782
+  Candidate only      : 1753
+  Saved only          : 3482
+  Exact token set     : False
+  Exact token IDs     : False
+
+Fold 2
+  Train/Test: 14637 / 3660
+  Candidate dictionary: 16538
+  Saved dictionary    : 17976
+  Common tokens       : 14661
+  Candidate only      : 1877
+  Saved only          : 3315
+  Exact token set     : False
+  Exact token IDs     : False
+
+Fold 3
+  Train/Test: 14638 / 3659
+  Candidate dictionary: 16608
+  Saved dictionary    : 17589
+  Common tokens       : 14641
+  Candidate only      : 1967
+  Saved only          : 2948
+  Exact token set     : False
+  Exact token IDs     : False
+
+Fold 4
+  Train/Test: 14638 / 3659
+  Candidate dictionary: 16737
+  Saved dictionary    : 17883
+  Common tokens       : 14855
+  Candidate only      : 1882
+  Saved only          : 3028
+  Exact token set     : False
+  Exact token IDs     : False
+
+Fold 5
+  Train/Test: 14638 / 3659
+  Candidate dictionary: 16547
+  Saved dictionary    : 18083
+  Common tokens       : 14718
+  Candidate only      : 1829
+  Saved only          : 3365
+  Exact token set     : False
+  Exact token IDs     : False
 
 ================================================================================
-GLOBAL DOCUMENT-ID CHECK
+CANDIDATE: StratifiedKFold_no_shuffle
 ================================================================================
-Unique IDs in saved folds : 18329
-Unique IDs in processed data: 18297
-Fold IDs absent from processed data: 32
-Processed IDs absent from folds: 0
 
-✓ NG04-8G reconciliation completed.
+Fold 1
+  Train/Test: 14637 / 3660
+  Candidate dictionary: 16653
+  Saved dictionary    : 18264
+  Common tokens       : 14810
+  Candidate only      : 1843
+  Saved only          : 3454
+  Exact token set     : False
+  Exact token IDs     : False
+
+Fold 2
+  Train/Test: 14637 / 3660
+  Candidate dictionary: 16444
+  Saved dictionary    : 17976
+  Common tokens       : 14570
+  Candidate only      : 1874
+  Saved only          : 3406
+  Exact token set     : False
+  Exact token IDs     : False
+
+Fold 3
+  Train/Test: 14638 / 3659
+  Candidate dictionary: 16461
+  Saved dictionary    : 17589
+  Common tokens       : 14481
+  Candidate only      : 1980
+  Saved only          : 3108
+  Exact token set     : False
+  Exact token IDs     : False
+
+Fold 4
+  Train/Test: 14638 / 3659
+  Candidate dictionary: 16891
+  Saved dictionary    : 17883
+  Common tokens       : 14947
+  Candidate only      : 1944
+  Saved only          : 2936
+  Exact token set     : False
+  Exact token IDs     : False
+
+Fold 5
+  Train/Test: 14638 / 3659
+  Candidate dictionary: 16812
+  Saved dictionary    : 18083
+  Common tokens       : 14728
+  Candidate only      : 2084
+  Saved only          : 3355
+  Exact token set     : False
+  Exact token IDs     : False
+
+================================================================================
+CANDIDATE: KFold_no_shuffle
+================================================================================
+
+Fold 1
+  Train/Test: 14637 / 3660
+  Candidate dictionary: 16626
+  Saved dictionary    : 18264
+  Common tokens       : 14809
+  Candidate only      : 1817
+  Saved only          : 3455
+  Exact token set     : False
+  Exact token IDs     : False
+
+Fold 2
+  Train/Test: 14637 / 3660
+  Candidate dictionary: 16490
+  Saved dictionary    : 17976
+  Common tokens       : 14580
+  Candidate only      : 1910
+  Saved only          : 3396
+  Exact token set     : False
+  Exact token IDs     : False
+
+Fold 3
+  Train/Test: 14638 / 3659
+  Candidate dictionary: 16466
+  Saved dictionary    : 17589
+  Common tokens       : 14488
+  Candidate only      : 1978
+  Saved only          : 3101
+  Exact token set     : False
+  Exact token IDs     : False
+
+Fold 4
+  Train/Test: 14638 / 3659
+  Candidate dictionary: 16855
+  Saved dictionary    : 17883
+  Common tokens       : 14928
+  Candidate only      : 1927
+  Saved only          : 2955
+  Exact token set     : False
+  Exact token IDs     : False
+
+Fold 5
+  Train/Test: 14638 / 3659
+  Candidate dictionary: 16808
+  Saved dictionary    : 18083
+  Common tokens       : 14718
+  Candidate only      : 2090
+  Saved only          : 3365
+  Exact token set     : False
+  Exact token IDs     : False
+
+================================================================================
+SPLITTER VALIDATION SUMMARY
+================================================================================
+                 Candidate  ExactTokenSetFolds  ExactTokenIDFolds  TotalCandidateOnly  TotalSavedOnly
+          KFold_no_shuffle                   0                  0                9722           16272
+           KFold_shuffle42                   0                  0                9308           16138
+StratifiedKFold_no_shuffle                   0                  0                9725           16259
+ StratifiedKFold_shuffle42                   0                  0                5181           11987
+
+================================================================================
+⚠ No candidate produced an exact
+  five-fold dictionary match.
+
+Do NOT compute perplexity yet.
+================================================================================
