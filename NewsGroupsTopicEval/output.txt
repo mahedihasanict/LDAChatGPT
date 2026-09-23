@@ -1,239 +1,429 @@
-================================================================================
-NG04-8J — RECOVER EXACT NG03 CV SPLITTER
-================================================================================
-
-Processed dataset: (18297, 7)
-Dictionary no_below: 5
-Dictionary no_above: 0.5
-
-================================================================================
-CANDIDATE: StratifiedKFold_shuffle42
+ ================================================================================
+NG04-8R — RAW METRIC VALIDATION AND MERGE
 ================================================================================
 
-Fold 1
-  Train/Test: 14637 / 3660
-  Candidate dictionary: 16818
-  Saved dictionary    : 18264
-  Common tokens       : 15801
-  Candidate only      : 1017
-  Saved only          : 2463
-  Exact token set     : False
-  Exact token IDs     : False
-
-Fold 2
-  Train/Test: 14637 / 3660
-  Candidate dictionary: 16487
-  Saved dictionary    : 17976
-  Common tokens       : 15405
-  Candidate only      : 1082
-  Saved only          : 2571
-  Exact token set     : False
-  Exact token IDs     : False
-
-Fold 3
-  Train/Test: 14638 / 3659
-  Candidate dictionary: 16434
-  Saved dictionary    : 17589
-  Common tokens       : 15381
-  Candidate only      : 1053
-  Saved only          : 2208
-  Exact token set     : False
-  Exact token IDs     : False
-
-Fold 4
-  Train/Test: 14638 / 3659
-  Candidate dictionary: 16657
-  Saved dictionary    : 17883
-  Common tokens       : 15734
-  Candidate only      : 923
-  Saved only          : 2149
-  Exact token set     : False
-  Exact token IDs     : False
-
-Fold 5
-  Train/Test: 14638 / 3659
-  Candidate dictionary: 16593
-  Saved dictionary    : 18083
-  Common tokens       : 15487
-  Candidate only      : 1106
-  Saved only          : 2596
-  Exact token set     : False
-  Exact token IDs     : False
+Perplexity rows : 495
+Coherence rows  : 495
 
 ================================================================================
-CANDIDATE: KFold_shuffle42
+RAW COHERENCE SIGN SUMMARY
 ================================================================================
 
-Fold 1
-  Train/Test: 14637 / 3660
-  Candidate dictionary: 16535
-  Saved dictionary    : 18264
-  Common tokens       : 14782
-  Candidate only      : 1753
-  Saved only          : 3482
-  Exact token set     : False
-  Exact token IDs     : False
+  
+    
 
-Fold 2
-  Train/Test: 14637 / 3660
-  Candidate dictionary: 16538
-  Saved dictionary    : 17976
-  Common tokens       : 14661
-  Candidate only      : 1877
-  Saved only          : 3315
-  Exact token set     : False
-  Exact token IDs     : False
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-Fold 3
-  Train/Test: 14638 / 3659
-  Candidate dictionary: 16608
-  Saved dictionary    : 17589
-  Common tokens       : 14641
-  Candidate only      : 1967
-  Saved only          : 2948
-  Exact token set     : False
-  Exact token IDs     : False
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-Fold 4
-  Train/Test: 14638 / 3659
-  Candidate dictionary: 16737
-  Saved dictionary    : 17883
-  Common tokens       : 14855
-  Candidate only      : 1882
-  Saved only          : 3028
-  Exact token set     : False
-  Exact token IDs     : False
+    .dataframe thead th {
+        text-align: right;
+    }
 
-Fold 5
-  Train/Test: 14638 / 3659
-  Candidate dictionary: 16547
-  Saved dictionary    : 18083
-  Common tokens       : 14718
-  Candidate only      : 1829
-  Saved only          : 3365
-  Exact token set     : False
-  Exact token IDs     : False
+
+  
+    
+      
+      Metric
+      Minimum
+      Maximum
+      Mean
+      Negative
+      Zero
+      Positive
+      NegativePct
+      PositivePct
+    
+  
+  
+    
+      0
+      Coherence_UMass
+      -6.624327
+      -0.978500
+      -3.405733
+      495
+      0
+      0
+      100.000000
+      0.000000
+    
+    
+      1
+      Coherence_CV
+      0.482003
+      0.816420
+      0.631627
+      0
+      0
+      495
+      0.000000
+      100.000000
+    
+    
+      2
+      Coherence_UCI
+      -3.988233
+      1.343336
+      -1.459762
+      427
+      0
+      68
+      86.262626
+      13.737374
+    
+    
+      3
+      Coherence_NPMI
+      -0.077489
+      0.182041
+      0.020750
+      209
+      0
+      286
+      42.222222
+      57.777778
+    
+  
+
+
+    
+
+  
+    
+
+  
+    
+  
+    
+
+  
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  
+
+    
+      const buttonEl =
+        document.querySelector('#df-e1940994-ca06-447e-b2e3-10b455d27957 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-e1940994-ca06-447e-b2e3-10b455d27957');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    
+  
+
+
+  
+    
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    
+    
+
+  
+    
+  
+    
+    
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_78d86e70-6924-416e-8332-5b8eb32a291e button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('coherence_sign_summary');
+      }
+      })();
+    
+  
+
+    
+  
 
 ================================================================================
-CANDIDATE: StratifiedKFold_no_shuffle
+MASTER TABLE VALIDATION
 ================================================================================
+Rows              : 495
+Columns           : 11
+Unique Fold-K     : 495
+Missing values    : 0
 
-Fold 1
-  Train/Test: 14637 / 3660
-  Candidate dictionary: 16653
-  Saved dictionary    : 18264
-  Common tokens       : 14810
-  Candidate only      : 1843
-  Saved only          : 3454
-  Exact token set     : False
-  Exact token IDs     : False
-
-Fold 2
-  Train/Test: 14637 / 3660
-  Candidate dictionary: 16444
-  Saved dictionary    : 17976
-  Common tokens       : 14570
-  Candidate only      : 1874
-  Saved only          : 3406
-  Exact token set     : False
-  Exact token IDs     : False
-
-Fold 3
-  Train/Test: 14638 / 3659
-  Candidate dictionary: 16461
-  Saved dictionary    : 17589
-  Common tokens       : 14481
-  Candidate only      : 1980
-  Saved only          : 3108
-  Exact token set     : False
-  Exact token IDs     : False
-
-Fold 4
-  Train/Test: 14638 / 3659
-  Candidate dictionary: 16891
-  Saved dictionary    : 17883
-  Common tokens       : 14947
-  Candidate only      : 1944
-  Saved only          : 2936
-  Exact token set     : False
-  Exact token IDs     : False
-
-Fold 5
-  Train/Test: 14638 / 3659
-  Candidate dictionary: 16812
-  Saved dictionary    : 18083
-  Common tokens       : 14728
-  Candidate only      : 2084
-  Saved only          : 3355
-  Exact token set     : False
-  Exact token IDs     : False
+Saved:
+/content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/metrics/ng04_raw_metric_master.csv
 
 ================================================================================
-CANDIDATE: KFold_no_shuffle
+✓ RAW COHERENCE VALUES PRESERVED
+✓ PERPLEXITY + COHERENCE MERGED
+✓ 495 UNIQUE EXPERIMENTS VERIFIED
 ================================================================================
 
-Fold 1
-  Train/Test: 14637 / 3660
-  Candidate dictionary: 16626
-  Saved dictionary    : 18264
-  Common tokens       : 14809
-  Candidate only      : 1817
-  Saved only          : 3455
-  Exact token set     : False
-  Exact token IDs     : False
+  
+    
 
-Fold 2
-  Train/Test: 14637 / 3660
-  Candidate dictionary: 16490
-  Saved dictionary    : 17976
-  Common tokens       : 14580
-  Candidate only      : 1910
-  Saved only          : 3396
-  Exact token set     : False
-  Exact token IDs     : False
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-Fold 3
-  Train/Test: 14638 / 3659
-  Candidate dictionary: 16466
-  Saved dictionary    : 17589
-  Common tokens       : 14488
-  Candidate only      : 1978
-  Saved only          : 3101
-  Exact token set     : False
-  Exact token IDs     : False
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-Fold 4
-  Train/Test: 14638 / 3659
-  Candidate dictionary: 16855
-  Saved dictionary    : 17883
-  Common tokens       : 14928
-  Candidate only      : 1927
-  Saved only          : 2955
-  Exact token set     : False
-  Exact token IDs     : False
+    .dataframe thead th {
+        text-align: right;
+    }
 
-Fold 5
-  Train/Test: 14638 / 3659
-  Candidate dictionary: 16808
-  Saved dictionary    : 18083
-  Common tokens       : 14718
-  Candidate only      : 2090
-  Saved only          : 3365
-  Exact token set     : False
-  Exact token IDs     : False
 
-================================================================================
-SPLITTER VALIDATION SUMMARY
-================================================================================
-                 Candidate  ExactTokenSetFolds  ExactTokenIDFolds  TotalCandidateOnly  TotalSavedOnly
-          KFold_no_shuffle                   0                  0                9722           16272
-           KFold_shuffle42                   0                  0                9308           16138
-StratifiedKFold_no_shuffle                   0                  0                9725           16259
- StratifiedKFold_shuffle42                   0                  0                5181           11987
+  
+    
+      
+      ExperimentID
+      Fold
+      Topics
+      TrainLogPerplexity
+      TestLogPerplexity
+      TrainPerplexity
+      TestPerplexity
+      Coherence_UMass
+      Coherence_CV
+      Coherence_UCI
+      Coherence_NPMI
+    
+  
+  
+    
+      0
+      NG_F1_K2
+      1
+      2
+      -8.166942
+      -8.218584
+      287.405039
+      297.879338
+      -6.624327
+      0.482003
+      -3.988233
+      -0.077489
+    
+    
+      1
+      NG_F1_K3
+      1
+      3
+      -8.017795
+      -8.114469
+      259.177277
+      277.139657
+      -1.259477
+      0.679111
+      0.346130
+      0.106190
+    
+    
+      2
+      NG_F1_K4
+      1
+      4
+      -7.962156
+      -8.111846
+      249.372131
+      276.636202
+      -1.392020
+      0.674515
+      0.317378
+      0.092768
+    
+    
+      3
+      NG_F1_K5
+      1
+      5
+      -7.929313
+      -8.109783
+      243.759208
+      276.240885
+      -1.521834
+      0.713990
+      0.531896
+      0.112504
+    
+    
+      4
+      NG_F1_K6
+      1
+      6
+      -7.908885
+      -8.111695
+      240.331941
+      276.607296
+      -1.502607
+      0.711919
+      0.554199
+      0.104472
+    
+  
 
-================================================================================
-⚠ No candidate produced an exact
-  five-fold dictionary match.
 
-Do NOT compute perplexity yet.
-================================================================================
+    
+
+  
+    
+
+  
+    
+  
+    
+
+  
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  
+
+    
+      const buttonEl =
+        document.querySelector('#df-f5c4b367-b96d-405b-a609-9cb57e36774b button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-f5c4b367-b96d-405b-a609-9cb57e36774b');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    
+  
+
+
+    
+  
