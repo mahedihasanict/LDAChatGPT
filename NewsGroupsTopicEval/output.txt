@@ -1,226 +1,9 @@
  ================================================================================
-NG04-8S — ORIGINAL NAC AND NAP TRANSFORMATIONS
+NG04-8T — RAW VS TRANSFORMED RANKING DIAGNOSTICS
 ================================================================================
 
-Saved: /content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/metrics/ng04_metric_master_with_nac_nap.csv
-
 ================================================================================
-FOLD-WISE NORMALIZATION DENOMINATORS
-================================================================================
-
-  
-    
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-
-
-  
-    
-      
-      MaxAbsUMass
-      MaxAbsCV
-      MaxAbsUCI
-      MaxAbsNPMI
-      MaxAbsLogPerplexity
-    
-    
-      Fold
-      
-      
-      
-      
-      
-    
-  
-  
-    
-      1
-      6.624327
-      0.713990
-      3.988233
-      0.112504
-      15.484621
-    
-    
-      2
-      4.826798
-      0.771700
-      3.101405
-      0.155436
-      11.452576
-    
-    
-      3
-      6.102812
-      0.763401
-      3.039293
-      0.131329
-      12.210208
-    
-    
-      4
-      4.529384
-      0.749012
-      2.940584
-      0.158527
-      11.562086
-    
-    
-      5
-      4.786634
-      0.816420
-      3.215946
-      0.182041
-      11.861954
-    
-  
-
-
-    
-
-  
-    
-
-  
-    
-  
-    
-
-  
-    .colab-df-container {
-      display:flex;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    .colab-df-buttons div {
-      margin-bottom: 4px;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  
-
-    
-      const buttonEl =
-        document.querySelector('#df-30b782b6-f8ed-4288-9088-18a9ed6df3b1 button.colab-df-convert');
-      buttonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-      async function convertToInteractive(key) {
-        const element = document.querySelector('#df-30b782b6-f8ed-4288-9088-18a9ed6df3b1');
-        const dataTable =
-          await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                    [key], {});
-        if (!dataTable) return;
-
-        const docLinkHtml = 'Like what you see? Visit the ' +
-          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-          + ' to learn more about interactive tables.';
-        element.innerHTML = '';
-        dataTable['output_type'] = 'display_data';
-        await google.colab.output.renderOutput(dataTable, element);
-        const docLink = document.createElement('div');
-        docLink.innerHTML = docLinkHtml;
-        element.appendChild(docLink);
-      }
-    
-  
-
-
-  
-    
-      .colab-df-generate {
-        background-color: #E8F0FE;
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-        display: none;
-        fill: #1967D2;
-        height: 32px;
-        padding: 0 0 0 0;
-        width: 32px;
-      }
-
-      .colab-df-generate:hover {
-        background-color: #E2EBFA;
-        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-        fill: #174EA6;
-      }
-
-      [theme=dark] .colab-df-generate {
-        background-color: #3B4455;
-        fill: #D2E3FC;
-      }
-
-      [theme=dark] .colab-df-generate:hover {
-        background-color: #434B5C;
-        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-        fill: #FFFFFF;
-      }
-    
-    
-
-  
-    
-  
-    
-    
-      (() => {
-      const buttonEl =
-        document.querySelector('#id_bbddcbf2-6750-4311-9c4f-f229b001334b button.colab-df-generate');
-      buttonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-      buttonEl.onclick = () => {
-        google.colab.notebook.generateWithVariable('normalization_summary');
-      }
-      })();
-    
-  
-
-    
-  
-
-================================================================================
-K SELECTED BY ORIGINAL NAC/NAP
+FOLD-LEVEL RANKING DIAGNOSTICS
 ================================================================================
 
   
@@ -243,58 +26,368 @@ K SELECTED BY ORIGINAL NAC/NAP
     
       
       Fold
-      NAC_UMass
-      NAC_CV
-      NAC_UCI
-      NAC_NPMI
-      NAP
+      Metric
+      RawMetric
+      TransformedMetric
+      RawBestK
+      TransformedBestK
+      BestKAgreement
+      SpearmanRho
+      DifferentRankPositions
+      MeanAbsoluteRankDifference
+      MaxAbsoluteRankDifference
     
   
   
     
       0
       1
+      NAC_UMass
+      Coherence_UMass
+      NAC_UMass
+      3
       2
-      5
-      2
-      5
-      100
+      0
+      -1.000000
+      98
+      49.494949
+      98.0
     
     
       1
-      2
-      84
-      4
-      84
-      4
-      100
-    
-    
-      2
-      3
-      3
-      10
-      91
-      7
-      100
-    
-    
-      3
-      4
-      94
-      7
-      98
-      2
-      100
-    
-    
-      4
+      1
+      NAC_CV
+      Coherence_CV
+      NAC_CV
       5
+      5
+      1
+      1.000000
+      0
+      0.000000
+      0.0
+    
+    
+      2
+      1
+      NAC_UCI
+      Coherence_UCI
+      NAC_UCI
+      6
+      2
+      0
+      -0.984552
+      98
+      49.494949
+      98.0
+    
+    
+      3
+      1
+      NAC_NPMI
+      Coherence_NPMI
+      NAC_NPMI
+      5
+      5
+      1
+      0.348918
+      82
+      24.484848
+      81.0
+    
+    
+      4
+      1
+      NAP
+      MeanLogPerplexity
+      NAP
+      5
+      100
+      0
+      -1.000000
+      98
+      49.494949
+      98.0
+    
+    
+      5
+      2
+      NAC_UMass
+      Coherence_UMass
+      NAC_UMass
+      2
+      84
+      0
+      -1.000000
+      98
+      49.494949
+      98.0
+    
+    
+      6
+      2
+      NAC_CV
+      Coherence_CV
+      NAC_CV
+      4
+      4
+      1
+      1.000000
+      0
+      0.000000
+      0.0
+    
+    
+      7
+      2
+      NAC_UCI
+      Coherence_UCI
+      NAC_UCI
+      4
+      84
+      0
+      -0.982362
+      98
+      49.494949
+      98.0
+    
+    
+      8
+      2
+      NAC_NPMI
+      Coherence_NPMI
+      NAC_NPMI
+      4
+      4
+      1
+      0.514051
+      74
+      20.000000
+      74.0
+    
+    
+      9
+      2
+      NAP
+      MeanLogPerplexity
+      NAP
+      5
+      100
+      0
+      -1.000000
+      98
+      49.494949
+      98.0
+    
+    
+      10
+      3
+      NAC_UMass
+      Coherence_UMass
+      NAC_UMass
+      2
+      3
+      0
+      -1.000000
+      98
+      49.494949
+      98.0
+    
+    
+      11
+      3
+      NAC_CV
+      Coherence_CV
+      NAC_CV
+      10
+      10
+      1
+      1.000000
+      0
+      0.000000
+      0.0
+    
+    
+      12
+      3
+      NAC_UCI
+      Coherence_UCI
+      NAC_UCI
+      7
+      91
+      0
+      -0.962165
+      98
+      49.494949
+      98.0
+    
+    
+      13
+      3
+      NAC_NPMI
+      Coherence_NPMI
+      NAC_NPMI
+      7
+      7
+      1
+      0.536487
+      71
+      19.959596
+      70.0
+    
+    
+      14
+      3
+      NAP
+      MeanLogPerplexity
+      NAP
+      5
+      100
+      0
+      -1.000000
+      98
+      49.494949
+      98.0
+    
+    
+      15
+      4
+      NAC_UMass
+      Coherence_UMass
+      NAC_UMass
+      2
+      94
+      0
+      -1.000000
+      98
+      49.494949
+      98.0
+    
+    
+      16
+      4
+      NAC_CV
+      Coherence_CV
+      NAC_CV
+      7
+      7
+      1
+      1.000000
+      0
+      0.000000
+      0.0
+    
+    
+      17
+      4
+      NAC_UCI
+      Coherence_UCI
+      NAC_UCI
+      2
+      98
+      0
+      -0.948275
+      98
+      49.494949
+      98.0
+    
+    
+      18
+      4
+      NAC_NPMI
+      Coherence_NPMI
+      NAC_NPMI
+      2
+      2
+      1
+      0.759518
+      59
+      12.767677
+      59.0
+    
+    
+      19
+      4
+      NAP
+      MeanLogPerplexity
+      NAP
+      4
+      100
+      0
+      -1.000000
+      98
+      49.494949
+      98.0
+    
+    
+      20
+      5
+      NAC_UMass
+      Coherence_UMass
+      NAC_UMass
+      2
       80
+      0
+      -1.000000
+      98
+      49.494949
+      98.0
+    
+    
+      21
+      5
+      NAC_CV
+      Coherence_CV
+      NAC_CV
+      5
+      5
+      1
+      1.000000
+      0
+      0.000000
+      0.0
+    
+    
+      22
+      5
+      NAC_UCI
+      Coherence_UCI
+      NAC_UCI
       5
       86
+      0
+      -0.968831
+      98
+      49.494949
+      98.0
+    
+    
+      23
       5
+      NAC_NPMI
+      Coherence_NPMI
+      NAC_NPMI
+      5
+      5
+      1
+      0.519270
+      71
+      20.121212
+      71.0
+    
+    
+      24
+      5
+      NAP
+      MeanLogPerplexity
+      NAP
+      7
       100
+      0
+      -1.000000
+      98
+      49.494949
+      98.0
     
   
 
@@ -352,12 +445,12 @@ K SELECTED BY ORIGINAL NAC/NAP
 
     
       const buttonEl =
-        document.querySelector('#df-3302ef6c-d639-4bb8-8236-8d9e3e1c0323 button.colab-df-convert');
+        document.querySelector('#df-e19cef95-f296-4453-aa94-03219c103eef button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-3302ef6c-d639-4bb8-8236-8d9e3e1c0323');
+        const element = document.querySelector('#df-e19cef95-f296-4453-aa94-03219c103eef');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -418,12 +511,12 @@ K SELECTED BY ORIGINAL NAC/NAP
     
       (() => {
       const buttonEl =
-        document.querySelector('#id_05aeb57f-7064-4967-8d43-d2342808fa35 button.colab-df-generate');
+        document.querySelector('#id_d77b9b94-425f-4089-a0a0-503bc81e456a button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       buttonEl.onclick = () => {
-        google.colab.notebook.generateWithVariable('selection_summary');
+        google.colab.notebook.generateWithVariable('ranking_diagnostic_df');
       }
       })();
     
@@ -433,10 +526,7 @@ K SELECTED BY ORIGINAL NAC/NAP
   
 
 ================================================================================
-✓ ORIGINAL ABSOLUTE-VALUE TRANSFORMATION REPRODUCED
-✓ NAC NORMALIZED WITHIN EACH FOLD
-✓ NAP NORMALIZED WITHIN EACH FOLD
-✓ ALL TRANSFORMED VALUES ARE IN [0, 1]
+METRIC-LEVEL SUMMARY
 ================================================================================
 
   
@@ -458,236 +548,71 @@ K SELECTED BY ORIGINAL NAC/NAP
   
     
       
-      ExperimentID
-      Fold
-      Topics
-      Coherence_UMass
-      AbsUMass
-      NAC_UMass
-      Coherence_CV
-      AbsCV
-      NAC_CV
-      Coherence_UCI
-      AbsUCI
-      NAC_UCI
-      Coherence_NPMI
-      AbsNPMI
-      NAC_NPMI
-      MeanLogPerplexity
-      AbsLogPerplexity
-      NAP
+      Metric
+      Folds
+      BestKAgreements
+      BestKAgreementPct
+      MeanSpearmanRho
+      MeanDifferentRankPositions
+      MeanAbsoluteRankDifference
+      MaximumRankDifference
     
   
   
     
       0
-      NG_F1_K2
-      1
-      2
-      -6.624327
-      6.624327
+      NAC_CV
+      5
+      5
+      100.0
       1.000000
-      0.482003
-      0.482003
-      0.675084
-      -3.988233
-      3.988233
-      1.000000
-      -0.077489
-      0.077489
-      0.688772
-      -8.218584
-      8.218584
-      0.530758
+      0.0
+      0.000000
+      0.0
     
     
       1
-      NG_F1_K3
-      1
-      3
-      -1.259477
-      1.259477
-      0.190129
-      0.679111
-      0.679111
-      0.951148
-      0.346130
-      0.346130
-      0.086788
-      0.106190
-      0.106190
-      0.943884
-      -8.114469
-      8.114469
-      0.524034
+      NAC_NPMI
+      5
+      5
+      100.0
+      0.535649
+      71.4
+      19.466667
+      81.0
     
     
       2
-      NG_F1_K4
-      1
-      4
-      -1.392020
-      1.392020
-      0.210138
-      0.674515
-      0.674515
-      0.944711
-      0.317378
-      0.317378
-      0.079579
-      0.092768
-      0.092768
-      0.824573
-      -8.111846
-      8.111846
-      0.523865
+      NAC_UCI
+      5
+      0
+      0.0
+      -0.969237
+      98.0
+      49.494949
+      98.0
     
     
       3
-      NG_F1_K5
-      1
+      NAC_UMass
       5
-      -1.521834
-      1.521834
-      0.229734
-      0.713990
-      0.713990
-      1.000000
-      0.531896
-      0.531896
-      0.133366
-      0.112504
-      0.112504
-      1.000000
-      -8.109783
-      8.109783
-      0.523731
+      0
+      0.0
+      -1.000000
+      98.0
+      49.494949
+      98.0
     
     
       4
-      NG_F1_K6
-      1
-      6
-      -1.502607
-      1.502607
-      0.226832
-      0.711919
-      0.711919
-      0.997099
-      0.554199
-      0.554199
-      0.138959
-      0.104472
-      0.104472
-      0.928611
-      -8.111695
-      8.111695
-      0.523855
-    
-    
+      NAP
       5
-      NG_F1_K7
-      1
-      7
-      -1.848268
-      1.848268
-      0.279012
-      0.661607
-      0.661607
-      0.926633
-      0.029384
-      0.029384
-      0.007368
-      0.077049
-      0.077049
-      0.684861
-      -8.142549
-      8.142549
-      0.525847
-    
-    
-      6
-      NG_F1_K8
-      1
-      8
-      -2.852878
-      2.852878
-      0.430667
-      0.627860
-      0.627860
-      0.879367
-      -0.894749
-      0.894749
-      0.224347
-      0.038876
-      0.038876
-      0.345551
-      -8.171427
-      8.171427
-      0.527712
-    
-    
-      7
-      NG_F1_K9
-      1
-      9
-      -1.645164
-      1.645164
-      0.248352
-      0.691442
-      0.691442
-      0.968419
-      0.091416
-      0.091416
-      0.022921
-      0.089063
-      0.089063
-      0.791647
-      -8.178067
-      8.178067
-      0.528141
-    
-    
-      8
-      NG_F1_K10
-      1
-      10
-      -1.984278
-      1.984278
-      0.299544
-      0.685445
-      0.685445
-      0.960020
-      -0.150716
-      0.150716
-      0.037790
-      0.077739
-      0.077739
-      0.690991
-      -8.215569
-      8.215569
-      0.530563
-    
-    
-      9
-      NG_F1_K11
-      1
-      11
-      -1.840151
-      1.840151
-      0.277787
-      0.702560
-      0.702560
-      0.983991
-      0.168077
-      0.168077
-      0.042143
-      0.090852
-      0.090852
-      0.807549
-      -8.323661
-      8.323661
-      0.537544
+      0
+      0.0
+      -1.000000
+      98.0
+      49.494949
+      98.0
     
   
 
@@ -745,12 +670,12 @@ K SELECTED BY ORIGINAL NAC/NAP
 
     
       const buttonEl =
-        document.querySelector('#df-3dcbfd5e-a3c6-45eb-84e2-c5e0ee4828b0 button.colab-df-convert');
+        document.querySelector('#df-6839f5f1-cb9b-4dce-b234-b66993abff03 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-3dcbfd5e-a3c6-45eb-84e2-c5e0ee4828b0');
+        const element = document.querySelector('#df-6839f5f1-cb9b-4dce-b234-b66993abff03');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -770,5 +695,68 @@ K SELECTED BY ORIGINAL NAC/NAP
   
 
 
+  
+    
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    
+    
+
+  
     
   
+    
+    
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_8f785c00-cd63-49a8-894d-c7b756ada8bc button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('ranking_summary_df');
+      }
+      })();
+    
+  
+
+    
+  
+
+Saved:
+/content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/metrics/ng04_raw_vs_transformed_ranking.csv
+/content/drive/MyDrive/LDAChatGPT/NewsGroupsTopicEval/metrics/ng04_raw_vs_transformed_ranking_summary.csv
+
+================================================================================
+✓ RAW AND TRANSFORMED RANKINGS COMPARED
+✓ FOLD-LEVEL BEST-K AGREEMENT MEASURED
+✓ SPEARMAN RANK AGREEMENT MEASURED
+✓ RANK-POSITION DISTORTION MEASURED
+================================================================================
